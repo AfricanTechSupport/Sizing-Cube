@@ -1,3 +1,6 @@
+input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
+    onLogoPress()
+})
 function cubePattern () {
     basic.showLeds(`
         # # # # #
@@ -49,6 +52,9 @@ function cubePattern () {
 }
 function playMelodies () {
     music.playMelody("C C E A F G C C ", 200)
+}
+function onLogoPress () {
+    basic.showIcon(IconNames.Chessboard)
 }
 input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
