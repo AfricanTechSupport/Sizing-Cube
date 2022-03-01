@@ -48,7 +48,7 @@ function cubePattern () {
         `)
 }
 function playMelodies () {
-    music.playMelody("F D C5 A E G C B ", 120)
+    music.playMelody("C C E A F G C C ", 200)
 }
 input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
